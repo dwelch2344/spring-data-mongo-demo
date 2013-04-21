@@ -3,6 +3,8 @@ package co.ntier.examples.sdmongo.util;
 import java.io.PrintStream;
 import java.util.Scanner;
 
+import org.springframework.util.Assert;
+
 /**
  * A simple utility class for interacting with a user via the command line. 
  */
@@ -13,6 +15,9 @@ public class SimpleIO {
 	
 	public SimpleIO(Scanner input, PrintStream output) {
 		super();
+		Assert.notNull(input, "Scanner is required");
+		Assert.notNull(output, "PrintStream is required");
+		
 		this.input = input;
 		this.output = output;
 	}

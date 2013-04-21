@@ -5,7 +5,7 @@
 	<artifactId>spring-data-mongo-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring Data Mongo Demonstration</name>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.data</groupId>
@@ -27,8 +27,15 @@
 			<artifactId>logback-classic</artifactId>
 			<version>1.0.7</version>
 		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
