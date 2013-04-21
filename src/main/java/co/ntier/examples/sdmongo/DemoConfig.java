@@ -14,7 +14,7 @@ import com.mongodb.MongoException;
 import com.mongodb.WriteConcern;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "co.ntier.examples.sdmongo")
+@EnableMongoRepositories
 public class DemoConfig {
 
 	@Bean
