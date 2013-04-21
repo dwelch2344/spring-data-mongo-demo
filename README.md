@@ -2,7 +2,7 @@
 
 This project is a simple demo of a few SpringData MongoDB features. The important bits under the `co.ntier.examples.sdmongo` base package:
 
-* `model.Person` - 
+* `model.Person` - A simple POJO for our model, with a few annotations to make the transition to MongoDB a bit cleaner. 
 * `util.Auditable` & `util.AuditingUtil` - Shows an example of how easy it is to intercept your models as they are stored & retrieved in MongoDB. The example is contrived, but should give you a good idea of the flexibility.
 * `repo.PersonRepository` - this is the real workhorse of SpringData I'd like to show. It's simply an interface that shows how SpringData gives you CRUD for free & how easy it is to add custom model-based lookups with **literally** no code.
 * `DemoConfig` - A Spring JavaConfig file that shows just how easy it is to get started **without any XML**
