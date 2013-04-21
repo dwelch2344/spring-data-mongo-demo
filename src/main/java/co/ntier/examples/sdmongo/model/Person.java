@@ -1,17 +1,25 @@
-package co.ntier.examples.sdmongo;
+package co.ntier.examples.sdmongo.model;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="People")
-public class DemoPerson {
+public class Person extends AbstractAuditable{
 
 	@Id
 	private ObjectId id;
 	
 	private String firstName, lastName;
 	
+	public Person() {}
+	
+	public Person(String firstName, String lastName) {
+		this();
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	public ObjectId getId() {
 		return id;
 	}
@@ -32,6 +40,9 @@ public class DemoPerson {
 		this.lastName = lastName;
 	}
 	
-	
+	@Override
+	public String toString() {
+		return String.format("%s %s", firstName, lastName);
+	}
 
 }
