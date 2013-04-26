@@ -22,6 +22,11 @@ public class SimpleIOTest {
 		fail("Should not accept null PrintStream");
 	}
 	
+	@Test
+	public void testFailingCI(){
+		fail("This is just for debug");
+	}
+	
 	
 
 }
