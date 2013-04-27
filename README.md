@@ -1,4 +1,4 @@
-# SpringData MongoDB Example
+# SpringData MongoDB Example ![](https://travis-ci.org/dwelch2344/spring-data-mongo-demo.png)
 
 This project is a simple demo of a few SpringData MongoDB features. The important bits under the `co.ntier.examples.sdmongo` base package:
 
